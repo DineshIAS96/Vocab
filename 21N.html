@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vocabulary Quiz (Fixed)</title>
+  <link rel="stylesheet" href="https://pawantestportal.com/all/Vocab/1.css">
+</head>
+
+<body>
+
+  <div id="userInfoPage" class="container">
+    <h1>📚 Vocabulary Quiz</h1>
+    <p class="subtitle">Learn political and election vocabulary</p>
+
+    <form id="userForm">
+      <div class="form-group">
+        <label for="name">Full Name *</label>
+        <input id="name" type="text" required placeholder="Enter your name" />
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number *</label>
+        <input id="phone" type="tel" required placeholder="Enter your phone number" pattern="[0-9]{10}" />
+      </div>
+
+      <div class="form-group">
+        <label for="genderSelect">Gender *</label>
+        <select id="genderSelect" required>
+          <option value="" disabled selected>Select Gender</option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <button class="btn" type="submit" id="startBtn">Start Learning 🚀</button>
+    </form>
+  </div>
+
+
+  <div id="modeSelectionPage" class="container hidden">
+    <h1>Choose Your Learning Mode</h1>
+    <p class="subtitle">Select how you want to learn vocabulary</p>
+
+    <div class="mode-selection">
+      <div class="mode-card" id="readMode">
+        <div class="mode-icon">📖</div>
+        <div class="mode-title">Read & Learn</div>
+        <div class="mode-description">Study vocabulary with definitions, examples, and pronunciation guides</div>
+      </div>
+
+      <div class="mode-card" id="quizMode">
+        <div class="mode-icon">🧠</div>
+        <div class="mode-title">Take Quiz</div>
+        <div class="mode-description">Test your knowledge with interactive multiple-choice questions</div>
+      </div>
+    </div>
+
+    <button class="btn back-to-modes hidden" id="backToModes">← Back to Modes</button>
+  </div>
+
+
+  <div id="vocabPage" class="container hidden">
+    <h1>📖 Vocabulary List</h1>
+    <div class="date-badge">📅 Date: November 06, 2025</div>
+    <div id="debugBadge" class="debug-badge" aria-hidden="true">Loading...</div>
+    <div id="timer" class="timer">Time: 00:00</div>
+    <div class="progress-bar">
+      <div id="progressFill" class="progress-fill"></div>
+    </div>
+    <div id="vocabContainer"></div>
+    <button class="btn back-to-modes" id="backFromVocab">← Back to Modes</button>
+  </div>
+
+
+  <div id="quizPage" class="container hidden">
+    <h1>🧠 Vocabulary Quiz</h1>
+    <div class="date-badge">📅 Date: November 06, 2025</div>
+
+    <div id="quizContainer" class="quiz-container">
+
+    </div>
+
+    <button class="btn back-to-modes" id="backFromQuiz">← Back to Modes</button>
+  </div>
+
+
+  <div id="mcqFab" class="mcq-fab hidden">+</div>
+  <div id="mcqNavigation" class="mcq-navigation">
+    <div class="mcq-title">MCQ Navigation</div>
+    <div id="mcqGrid" class="mcq-grid">
+
+    </div>
+  </div>
+
+
+  <div id="backFab" class="back-fab hidden">←</div>
+
+
+  <a id="fabHelp" class="fab" target="_blank" rel="noopener noreferrer" title="Help on WhatsApp">💬</a>
+
+  <script src="https://pawantestportal.com/all/Vocab/1.js"></script>
+</body>
+
+</html>
